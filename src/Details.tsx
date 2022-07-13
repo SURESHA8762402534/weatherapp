@@ -64,6 +64,7 @@ const Deatails: FC<any> = (props) => {
       <View style={style.back}>
         <View style={style.btn}>
           <Button
+            testID="back"
             title="Back"
             onPress={() => navigation.navigate("home")}
             color={"lightblue"}
@@ -73,8 +74,8 @@ const Deatails: FC<any> = (props) => {
       <SafeAreaView style={style.container1}>
         <FlatList
           data={country}
-          renderItem={({ item }) => (
-            <View style={style.card}>
+          renderItem={({ item, index }) => (
+            <View testID={`test-${index}`} style={style.card}>
               <View style={{ width: "60%" }}>
                 <Text> Name : {item?.name.common}</Text>
                 <Text> Capital : {item?.capital[0]} </Text>
@@ -82,6 +83,7 @@ const Deatails: FC<any> = (props) => {
                 <Text> Latitude : {item?.latlng[0]}</Text>
                 <Text> Longitude : {item?.latlng[1]}</Text>
                 <Button
+                  testID="capital"
                   title={"Capital Weather"}
                   onPress={() => {
                     setcapital(item?.capital[0]);
@@ -122,7 +124,11 @@ const Deatails: FC<any> = (props) => {
       <Modal visible={modal}>
         <View style={style.back}>
           <View style={style.btn1}>
-            <Button title="Back" onPress={() => setModal(false)} />
+            <Button
+              testID="back1"
+              title="Back"
+              onPress={() => setModal(false)}
+            />
           </View>
         </View>
         <View style={style.card1}>

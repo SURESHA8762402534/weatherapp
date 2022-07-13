@@ -14,6 +14,7 @@ const Main: FC = () => {
       <SafeAreaView style={style.container}>
         <View style={style.border}>
           <TextInput
+            testID="textbox"
             value={name}
             placeholder="Enter Country"
             placeholderTextColor={"gray"}
@@ -24,6 +25,7 @@ const Main: FC = () => {
           />
 
           <Button
+            testID="btn"
             disabled={!name}
             title="Submit"
             onPress={() => {
