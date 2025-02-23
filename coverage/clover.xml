@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658245642699" clover="3.2.0">
-  <project timestamp="1658245642699" name="All files">
+<coverage generated="1658389257810" clover="3.2.0">
+  <project timestamp="1658389257811" name="All files">
     <metrics statements="41" coveredstatements="27" conditionals="4" coveredconditionals="3" methods="12" coveredmethods="7" elements="57" coveredelements="37" complexity="0" loc="41" ncloc="41" packages="1" files="3" classes="3"/>
     <file name="Details.tsx" path="E:\REACT-NATIVE\weather-app\src\Details.tsx">
       <metrics statements="34" coveredstatements="20" conditionals="4" coveredconditionals="3" methods="9" coveredmethods="4"/>

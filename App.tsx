@@ -5,7 +5,6 @@ import { StyleSheet, Text, View } from "react-native";
 import Main from "./src/Main";
 import Deatails from "./src/Details";
 import { useEffect, useState } from "react";
-import Data from "./src/Data";
 
 export default function App() {
   const [value, setValue] = useState("data");
@@ -38,7 +37,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Navigator>
-        {/* <Screen name="data" component={Data} /> */}
         <Screen name="home" component={Main} options={options} />
         <Screen name="details" component={Deatails} options={options} />
       </Navigator>
